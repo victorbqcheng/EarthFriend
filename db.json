@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Clean Up the Beach",
+      "description": "Join us in cleaning up the beach and protecting our oceans. We will provide gloves, bags, and other necessary equipment. All you need to bring is your enthusiasm and willingness to make a difference.",
+      "imageUrl": "https://picsum.photos/id/10/400/400"
+    },
+    {
+      "id": 2,
+      "title": "Plant a Tree",
+      "description": "Trees are essential for our planet's health. Join us in planting trees in your community and help reduce carbon dioxide levels. We will provide all the necessary equipment, including shovels, gloves, and saplings.",
+      "imageUrl": "https://picsum.photos/id/11/400/400"
+    },
+    {
+      "id": 3,
+      "title": "Reduce, Reuse, Recycle",
+      "description": "Learn how to reduce your carbon footprint by reducing waste, reusing items, and recycling materials. We will teach you how to make compost, how to recycle properly, and how to reduce your energy consumption.",
+      "imageUrl": "https://picsum.photos/id/12/400/400"
+    },
+    {
+      "id": 4,
+      "title": "Green Your Commute",
+      "description": "Join us in reducing air pollution by biking or walking to work or school. We will provide tips on how to make your commute more eco-friendly and help you find a bike route that works for you.",
+      "imageUrl": "https://picsum.photos/id/13/400/400"
+    },
+    {
+      "id": 5,
+      "title": "Garbage Classification",
+      "description": "Learn how to correctly classify garbage and reduce environmental pollution. We will teach you how to identify recyclables, hazardous waste, and kitchen waste, and share some interesting garbage classification knowledge.",
+      "imageUrl": "https://picsum.photos/id/14/400/400"
+    },
+    {
+      "id": 6,
+      "title": "Protect Water Resources",
+      "description": "Learn how to use water resources reasonably and avoid waste. We will teach you how to repair leaks, save water, and share some water-saving tips.",
+      "imageUrl": "https://picsum.photos/id/15/400/400"
+    },
+    {
+      "id": 7,
+      "title": "Eco-Friendly Commute",
+      "description": "Ride a bike or walk to work or school to reduce car exhaust emissions. We will provide some eco-friendly commuting suggestions and help you plan a suitable route.",
+      "imageUrl": "https://picsum.photos/id/16/400/400"
+    },
+    {
+      "imageUrl": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fchapter09-initial-78ca9e75-2a38-4561-b338-4f2128a113fe/ImagePicker/2ee5c1ac-67ae-4bf0-91c3-3a34735d32e8.jpeg",
+      "description": "hdjisnnx",
+      "id": 8
+    },
+    {
+      "imageUrl": "file:///data/user/0/host.exp.exponent/cache/ExperienceData/%2540anonymous%252Fchapter09-initial-78ca9e75-2a38-4561-b338-4f2128a113fe/ImagePicker/60a82a26-4ca2-4f18-810d-e9807b42ebdc.jpeg",
+      "description": "gddhh",
+      "id": 9
+    }
+  ]
+}
