@@ -14,6 +14,7 @@ import Friends from './screens/Friends'
 import Posts from './screens/Posts'
 import PostForm from './screens/PostForm'
 import Profile from './screens/Profile'
+import PostDetail from './screens/PostDetail';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -67,7 +68,7 @@ function Navigator() {
         <Stack.Screen name='Login' component={Login} />
         <Stack.Screen name='Home' component={Home}
           options={({ route }) => ({ headerTitle: getFocusedRouteNameFromRoute(route), headerBackVisible:false, })} />
-        
+        <Stack.Screen name='PostDetail' component={PostDetail}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
