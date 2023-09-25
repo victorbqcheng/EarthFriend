@@ -28,18 +28,19 @@ function Home() {
           const iconName = (route.name === 'Posts' && 'feed')
             || (route.name === 'Profile' && 'user')
             || (route.name === 'PostForm' && 'plus-square')
-          return <FontAwesome name={iconName} />;
+            || (route.name === 'Friends' && 'group')
+          return <FontAwesome color={color} size={size} name={iconName} />;
         },
       })}>
-      <Tab.Screen 
+      <Tab.Screen
         name='Friends'
         component={Friends}
-        options={{ headerShown: false, tabBarIcon: (color, size) => { return <FontAwesome name='group' size={size} /> } }}/>
+        options={{ headerShown: false,  }}/>
 
       <Tab.Screen
         name='Posts'
         component={Posts}
-        options={{ headerShown: false, tabBarIcon: (color, size) => { return <FontAwesome name='feed' color={'red'} size={size} /> } }} />
+        options={{ headerShown: false, }} />
 
       <Tab.Screen
         name='PostForm'
