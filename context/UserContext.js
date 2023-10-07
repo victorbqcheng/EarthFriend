@@ -1,18 +1,10 @@
 import React, { createContext, useReducer } from 'react';
 import Constants from 'expo-constants';
 import AsyncStorage from '@react-native-async-storage/async-storage'
-
+import UserState from '../model/UserState';
 const { apiUrl } = Constants.expoConfig.extra;
 
 export const UserContext = createContext();
-
-const initialState = {
-  user: {
-    token: '',
-  },
-  loading: true,
-  error: '',
-};
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -44,7 +36,7 @@ const reducer = (state, action) => {
 };
 
 export const UserContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, UserState);
 
   async function loginUser(username, password) {
     try {

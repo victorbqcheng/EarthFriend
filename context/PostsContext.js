@@ -1,18 +1,13 @@
 import React, { useContext } from 'react';
 import { createContext, useReducer } from 'react';
 import Constants from 'expo-constants';
+import PostsState from '../model/PostsState'
 import UserContext from './UserContext';
 
 const { apiUrl } = Constants.expoConfig.extra;
+// const apiUrl = "https://earthfriendapi20231001234709.azurewebsites.net/";
 
 export const PostsContext = createContext();
-
-const initialState = {
-  posts: [],
-  post: {},
-  loading: true,
-  error: '',
-};
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -55,7 +50,7 @@ const reducer = (state, action) => {
 };
 
 export const PostsContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, PostsState);
   const { user } = useContext(UserContext);
 
   async function fetchPosts() {
