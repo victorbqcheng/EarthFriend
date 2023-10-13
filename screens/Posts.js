@@ -19,7 +19,7 @@ export default function Posts() {
         <Text style={styles.message}>{error || 'Loading...'}</Text>
       ) : (
         posts &&
-        posts.map((post) => (
+        posts.map(post => (
           <TouchableOpacity
             key={post.id}
             onPress={() =>

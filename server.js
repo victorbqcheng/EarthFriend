@@ -19,9 +19,7 @@ server.post('/api/login', async (req, res) => {
       if (!error && result) {
         res.jsonp({
           username: user.username,
-          token: JsonWebToken.sign({ user: user.username }, jwtSecret, {
-            
-          }),
+          token: JsonWebToken.sign({ user: user.username }, jwtSecret, {}),
         });
       } else {
         res.sendStatus(401);
@@ -41,7 +39,7 @@ server.use((req, res, next) => {
     const bearerToken = token && token.split(' ');
 
     if (bearerToken) {
-      JsonWebToken.verify(bearerToken[1], jwtSecret, (error) => {
+      JsonWebToken.verify(bearerToken[1], jwtSecret, error => {
         if (!error) {
           next();
         } else {

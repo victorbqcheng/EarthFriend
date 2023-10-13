@@ -1,4 +1,3 @@
-import React, {createRef} from "react";
+import React, { createRef } from 'react';
 
 export const navigationRef = createRef();
-

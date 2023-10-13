@@ -61,19 +61,16 @@ export const UserContextProvider = ({ children }) => {
     try {
       AsyncStorage.removeItem('token');
       dispatch({ type: 'REMOVE_USER_TOKEN' });
-    } catch (error) {
-    }
+    } catch (error) {}
   }
 
   async function getToken() {
     try {
       const token = await AsyncStorage.getItem('token');
-      if(token !== null) {
-        dispatch({type:'SET_USER_TOKEN', payload:token});
+      if (token !== null) {
+        dispatch({ type: 'SET_USER_TOKEN', payload: token });
       }
-    } catch (error) {
-      
-    }
+    } catch (error) {}
   }
 
   return (

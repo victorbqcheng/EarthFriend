@@ -5,7 +5,7 @@ export default function FormInput({ onChange, ...props }) {
   return (
     <TextInput
       style={styles.input}
-      onChangeText={(text) => onChange(text)}
+      onChangeText={text => onChange(text)}
       {...props}
     />
   );

@@ -8,29 +8,31 @@ export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const {user, error, loginUser } = useContext(UserContext);
+  const { user, error, loginUser } = useContext(UserContext);
   const navigation = useNavigation();
 
-  useEffect(()=>{
-    if(user.token) {
+  useEffect(() => {
+    if (user.token) {
       navigation.navigate('Home');
     }
   }, [user.token]);
 
   return (
     <View style={styles.container}>
-      {error.length ? <Text style={styles.message}>Something went wrong</Text> : null}
+      {error.length ? (
+        <Text style={styles.message}>Something went wrong</Text>
+      ) : null}
       <FormInput
         onChangeText={setUsername}
         value={username}
-        placeholder='Your username'
-        textContentType='username'
+        placeholder="Your username"
+        textContentType="username"
       />
       <FormInput
         onChangeText={setPassword}
         value={password}
-        placeholder='Your password'
-        textContentType='password'
+        placeholder="Your password"
+        textContentType="password"
         secureTextEntry
       />
       <TouchableOpacity onPress={() => loginUser(username, password)}>
