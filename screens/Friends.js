@@ -85,7 +85,7 @@ const friendList = [
         "content": "We will teach you how to make compost, how to recycle properly, and how to reduce your energy consumptio.",
         "photo": "https://picsum.photos/id/173/400/400",
         "date": "09/03"
-    }
+    },
 ];
 
 export default function Friends() {
@@ -94,7 +94,7 @@ export default function Friends() {
             {
                 friendList.map((friend)=>{
                     return (
-                        <FriendListItem key={friend.id} data={friend}></FriendListItem>
+                        <FriendListItem key={friend.id} data={friend} />
                     );
                 })
             }

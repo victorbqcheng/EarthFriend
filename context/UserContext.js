@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react';
 import Constants from 'expo-constants';
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import UserState from '../model/UserState';
 const { apiUrl } = Constants.expoConfig.extra;
 

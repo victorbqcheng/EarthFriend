@@ -1,19 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { FontAwesome } from '@expo/vector-icons'
+import { FontAwesome } from '@expo/vector-icons';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer, getFocusedRouteNameFromRoute } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useContext, useEffect } from 'react';
 
-import {navigationRef} from './routing'
+import {navigationRef} from './routing';
 import Login from './screens/Login';
 import AppContext from './context/AppContext';
 import UserContext from './context/UserContext';
-import Friends from './screens/Friends'
-import Posts from './screens/Posts'
-import PostForm from './screens/PostForm'
-import Profile from './screens/Profile'
+import Friends from './screens/Friends';
+import Posts from './screens/Posts';
+import PostForm from './screens/PostForm';
+import Profile from './screens/Profile';
 import PostDetail from './screens/PostDetail';
 import News from './screens/News';
 

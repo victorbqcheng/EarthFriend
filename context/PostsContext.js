@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { createContext, useReducer } from 'react';
 import Constants from 'expo-constants';
-import PostsState from '../model/PostsState'
+import PostsState from '../model/PostsState';
 import UserContext from './UserContext';
 
 const { apiUrl } = Constants.expoConfig.extra;

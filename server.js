@@ -13,6 +13,7 @@ const user = {
 const jwtSecret = '34%%##@#FGFKFL';
 
 server.post('/api/login', async (req, res) => {
+  console.log('api/login:' + req.query.username);
   if (user.username === req.query.username) {
     Bcrypt.compare(req.query.password, user.password, (error, result) => {
       if (!error && result) {
