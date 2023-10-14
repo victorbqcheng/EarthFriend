@@ -4,8 +4,8 @@ import Constants from 'expo-constants';
 import PostsState from '../model/PostsState';
 import UserContext from './UserContext';
 
-const { apiUrl } = Constants.expoConfig.extra;
-// const apiUrl = "https://earthfriendapi20231001234709.azurewebsites.net/";
+// const { apiUrl } = Constants.expoConfig.extra;
+const apiUrl = "https://earthfriendapi20231014113817.azurewebsites.net/";
 
 export const PostsContext = createContext();
 
