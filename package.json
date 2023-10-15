@@ -9,11 +9,10 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "eslint_html": "eslint --format html . -o ./dist/eslint/index.html",
-    "lint:fix":"eslint . --fix --ext .js"
+    "lint:fix": "eslint . --fix --ext .js"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.18.2",
-    "@react-native/eslint-config": "^0.74.0",
     "@react-navigation/bottom-tabs": "^6.5.8",
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
@@ -31,8 +30,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@react-native/eslint-config": "^0.72.2",
     "eslint": "^8.51.0",
     "prettier": "^2.4.1"
   },
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=16"
+  }
 }

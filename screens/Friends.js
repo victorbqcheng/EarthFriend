@@ -1,6 +1,7 @@
-import React from 'react';
-import { View, ScrollView, Text, StyleSheet } from 'react-native';
+import React, { useEffect } from 'react';
+import { View, ScrollView, Text, StyleSheet, BackHandler } from 'react-native';
 import FriendListItem from '../components/friendListItem';
+import { useNavigation } from '@react-navigation/native';
 
 const friendList = [
   {
@@ -102,6 +103,18 @@ const friendList = [
 ];
 
 export default function Friends() {
+
+  const navigation = useNavigation();
+
+  useEffect(()=>{
+
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', ()=>{
+      return false;
+    });
+
+    return ()=>backHandler.remove();
+  },[navigation]);
+
   return (
     <ScrollView>
       {friendList.map(friend => {

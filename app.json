@@ -21,14 +21,15 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.victorcbq.EarthFriend"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "fe772fac-f6b1-4ae2-85b6-78ad95f32c73"
+        "projectId": "a379ddcd-7d6e-4191-984d-25721001c1f5"
       }
     }
   }

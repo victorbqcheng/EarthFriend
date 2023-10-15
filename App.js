@@ -1,10 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { FontAwesome } from '@expo/vector-icons';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, StyleSheet, Text, View } from 'react-native';
 import {
   NavigationContainer,
   getFocusedRouteNameFromRoute,
+  useNavigation,
 } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -25,6 +26,11 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 function Home() {
+  const navigation = useNavigation();
+  useEffect(()=>{
+    navigation.addListener('beforeRemove', (e)=>{
+    });
+  }, [navigation]);
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({

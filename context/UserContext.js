@@ -2,7 +2,9 @@ import React, { createContext, useReducer } from 'react';
 import Constants from 'expo-constants';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import UserState from '../model/UserState';
-const { apiUrl } = Constants.expoConfig.extra;
+
+// const { apiUrl } = Constants.expoConfig.extra;
+const apiUrl = "https://earthfriendapi20231014113817.azurewebsites.net";
 
 export const UserContext = createContext();
 
@@ -47,7 +49,7 @@ export const UserContextProvider = ({ children }) => {
         },
       );
       const result = await data.json();
-
+      
       if (result) {
         dispatch({ type: 'SET_USER_TOKEN', payload: result.token });
         await AsyncStorage.setItem('token', result.token);
@@ -60,7 +62,8 @@ export const UserContextProvider = ({ children }) => {
   async function logoutUser() {
     try {
       AsyncStorage.removeItem('token');
-      dispatch({ type: 'REMOVE_USER_TOKEN' });
+      // dispatch({ type: 'REMOVE_USER_TOKEN' });
+      dispatch({ type: 'SET_USER_TOKEN', payload: '' });
     } catch (error) {}
   }
 
