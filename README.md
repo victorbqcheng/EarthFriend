@@ -26,4 +26,4 @@ npm install -g expo-cli
 #### 2. create an expo user account
 https://expo.dev/signup
 #### 3. build
-eas build -p android --profile preview
+npx eas build -p android --profile preview
