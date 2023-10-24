@@ -8,7 +8,7 @@ import {
   Image,
   Dimensions,
 } from 'react-native';
-import NewsContext from '../context/NewsContext';
+import NewsContext from '../viewmodel/NewsContext';
 import NewsItem from '../components/NewsItem';
 
 export default function News() {

@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { useRoute } from '@react-navigation/native';
-import PostsContext from '../context/PostsContext';
+import PostsContext from '../viewmodel/PostsContext';
 
 const PostDetail = () => {
   const route = useRoute();

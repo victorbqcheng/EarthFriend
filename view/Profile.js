@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { StyleSheet, View, Image, Text, Pressable } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import UserContext from '../context/UserContext';
+import UserContext from '../viewmodel/UserContext';
 import { navigationRef } from '../routing';
 
 export default function Profile() {

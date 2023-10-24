@@ -12,15 +12,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useContext, useEffect } from 'react';
 
 import { navigationRef } from './routing';
-import Login from './screens/Login';
-import AppContext from './context/AppContext';
-import UserContext from './context/UserContext';
-import Friends from './screens/Friends';
-import Posts from './screens/Posts';
-import PostForm from './screens/PostForm';
-import Profile from './screens/Profile';
-import PostDetail from './screens/PostDetail';
-import News from './screens/News';
+import Login from './view/Login';
+import AppContext from './viewmodel/AppContext';
+import UserContext from './viewmodel/UserContext';
+import Friends from './view/Friends';
+import Posts from './view/Posts';
+import PostForm from './view/PostForm';
+import Profile from './view/Profile';
+import PostDetail from './view/PostDetail';
+import News from './view/News';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();

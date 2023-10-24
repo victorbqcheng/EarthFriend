@@ -1,7 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import React, { useContext, useEffect } from 'react';
 import { StyleSheet, Text, ScrollView, TouchableOpacity } from 'react-native';
-import PostsContext from '../context/PostsContext';
+import PostsContext from '../viewmodel/PostsContext';
 import PostItem from '../components/PostItem';
 
 export default function Posts() {

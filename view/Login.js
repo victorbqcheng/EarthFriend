@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useContext, useEffect, useState } from 'react';
 import { StyleSheet, TouchableOpacity, Text, View } from 'react-native';
 import FormInput from '../components/FormInput';
-import UserContext from '../context/UserContext';
+import UserContext from '../viewmodel/UserContext';
 
 export default function Login() {
   const [username, setUsername] = useState('');

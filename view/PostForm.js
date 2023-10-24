@@ -14,7 +14,7 @@ import * as ImagePicker from 'expo-image-picker';
 
 import Button from '../components/Button';
 import FormInput from '../components/FormInput';
-import PostsContext from '../context/PostsContext';
+import PostsContext from '../viewmodel/PostsContext';
 
 export default function PostForm() {
   const [imageUrl, setImageUrl] = useState('');
