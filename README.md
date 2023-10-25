@@ -2,6 +2,7 @@
 
 #### 1. setting up the development environment
 https://reactnative.dev/docs/environment-setup?guide=native
+note: nodejs version >= 16
 
 #### 2. clone the code to your local machine
 git clone https://github.com/victorbqcheng/EarthFriend.git
@@ -27,3 +28,7 @@ npm install -g expo-cli
 https://expo.dev/signup
 #### 3. build
 npx eas build -p android --profile preview
+
+### Pre-release
+download pre-release package
+https://github.com/victorbqcheng/EarthFriend/releases
