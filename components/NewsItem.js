@@ -8,9 +8,9 @@ import {
   View,
 } from 'react-native';
 
-const NewsItem = ({ data }) => {
+const NewsItem = ({ data, onPress }) => {
   return (
-    <TouchableOpacity>
+    <TouchableOpacity onPress={onPress}>
       <View style={styles.container}>
         <View style={{ display: 'flex', flex: 8 }}>
           <View style={{ display: 'flex', flexDirection: 'row' }}>

@@ -10,9 +10,10 @@ import {
 } from 'react-native';
 import NewsContext from '../viewmodel/NewsContext';
 import NewsItem from '../components/NewsItem';
+import { useNavigation } from '@react-navigation/native';
 
 export default function News() {
-
+  const navigation = useNavigation();
   const { loading, error, newsList, fetchNewsList } = useContext(NewsContext);
   useEffect(()=>{
     (!newsList || !newsList.length) && fetchNewsList();
@@ -22,7 +23,9 @@ export default function News() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {newsList.map(news => {
-        return <NewsItem key={news.id} data={news} />;
+        return <NewsItem key={news.id} data={news} 
+                onPress={()=>{navigation.navigate('NewsDetail', {data:news})}}
+              />;
       })}
     </ScrollView>
   );

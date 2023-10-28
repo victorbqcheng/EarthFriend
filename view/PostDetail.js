@@ -6,6 +6,7 @@ import {
   Image,
   Dimensions,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import PostsContext from '../viewmodel/PostsContext';
@@ -29,6 +30,10 @@ const PostDetail = () => {
     r = Math.floor(r);
     console.log('random:' + r);
     return r;
+  }
+
+  function onJoin() {
+    Alert.alert('info:', 'Join successfully');
   }
 
   return (
@@ -57,7 +62,7 @@ const PostDetail = () => {
         </View>
       </View>
       <TouchableOpacity>
-        <Text style={styles.button}>join</Text>
+        <Text style={styles.button} onPress={onJoin}>join</Text>
       </TouchableOpacity>
       <View id="post-detail" style={{ display: 'flex', alignItems: 'center' }}>
         <Image source={{ uri: post.imageUrl }} style={styles.image} />
