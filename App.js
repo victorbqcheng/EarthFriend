@@ -21,6 +21,8 @@ import PostForm from './view/PostForm';
 import Profile from './view/Profile';
 import PostDetail from './view/PostDetail';
 import News from './view/News';
+import NewsDetail from './view/NewsDetail';
+import Chat from './view/Chat';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -92,7 +94,9 @@ function Navigator() {
             headerBackVisible: false,
           })}
         />
+        <Stack.Screen name='Chat' component={Chat}/>
         <Stack.Screen name="PostDetail" component={PostDetail} />
+        <Stack.Screen name='NewsDetail' component={NewsDetail} />
         <Stack.Screen name="PostForm" component={PostForm} />
       </Stack.Navigator>
     </NavigationContainer>

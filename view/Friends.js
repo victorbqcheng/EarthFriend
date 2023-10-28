@@ -118,7 +118,7 @@ export default function Friends() {
   return (
     <ScrollView>
       {friendList.map(friend => {
-        return <FriendListItem key={friend.id} data={friend} />;
+        return <FriendListItem key={friend.id} data={friend} onPress={()=>{navigation.navigate('Chat', {})}}/>;
       })}
     </ScrollView>
   );
