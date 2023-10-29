@@ -13,7 +13,7 @@ const PostItem = ({ data }) => (
   <View style={styles.container}>
     <Image source={{ uri: data.imageUrl }} style={styles.thumbnail} />
     <View style={styles.details}>
-      <Text style={styles.title}>{data.title}</Text>
+      <Text numberOfLines={1} style={styles.title}>{data.title}</Text>
       <Text numberOfLines={5} style={styles.description}>
         {data.description}
       </Text>

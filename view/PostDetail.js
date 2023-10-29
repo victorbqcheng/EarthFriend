@@ -7,6 +7,7 @@ import {
   Dimensions,
   TouchableOpacity,
   Alert,
+  ScrollView
 } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import PostsContext from '../viewmodel/PostsContext';
@@ -37,7 +38,7 @@ const PostDetail = () => {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       {/* {loading || error ? (
         <Text style={styles.message}>{error || 'Loading...'}</Text>
       ) : (
@@ -68,7 +69,8 @@ const PostDetail = () => {
         <Image source={{ uri: post.imageUrl }} style={styles.image} />
         <Text style={{ margin: 10 }}>{post.description}</Text>
       </View>
-    </View>
+
+    </ScrollView>
   );
 };
 
@@ -76,11 +78,10 @@ export default PostDetail;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     backgroundColor: 'white',
     display: 'flex',
     justifyContent: 'flex-start',
-    flexWrap: 'wrap',
+    // flexWrap: 'wrap',
     padding: 10,
   },
   title: {
